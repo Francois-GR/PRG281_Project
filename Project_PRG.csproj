@@ -53,6 +53,7 @@
       <DependentUpon>ArtistForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DataHandler.cs" />
+    <Compile Include="GameInterface.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>

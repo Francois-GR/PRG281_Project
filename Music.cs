@@ -16,7 +16,7 @@ namespace Project_PRG
         HeavyMetal,
         Gospel,
         Dubstep
-    }
+    };
 
     class Music
     {
