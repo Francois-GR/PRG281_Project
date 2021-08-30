@@ -28,5 +28,10 @@ namespace Project_PRG
             //dfgdasfrgads
             //hello julle van megan
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //test
+        }
     }
 }
