@@ -1,0 +1,5 @@
+C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project_PRG\obj\Debug\Project_PRG.csproj.AssemblyReference.cache
+C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project_PRG\obj\Debug\Project_PRG.Form1.resources
+C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project_PRG\obj\Debug\Project_PRG.Menu.resources
+C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project_PRG\obj\Debug\Project_PRG.Signup.resources
+C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project_PRG\obj\Debug\Project_PRG.csproj.GenerateResource.cache
