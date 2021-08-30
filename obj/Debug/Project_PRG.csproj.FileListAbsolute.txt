@@ -3,3 +3,16 @@ C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project_
 C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project_PRG\obj\Debug\Project_PRG.Menu.resources
 C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project_PRG\obj\Debug\Project_PRG.Signup.resources
 C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project_PRG\obj\Debug\Project_PRG.csproj.GenerateResource.cache
+C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project\PRG281\obj\Debug\Project_PRG.csproj.AssemblyReference.cache
+C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project\PRG281\obj\Debug\Project_PRG.Form1.resources
+C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project\PRG281\obj\Debug\Project_PRG.GameMode.resources
+C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project\PRG281\obj\Debug\Project_PRG.Menu.resources
+C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project\PRG281\obj\Debug\Project_PRG.Signup.resources
+C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project\PRG281\obj\Debug\Project_PRG.csproj.GenerateResource.cache
+C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project\PRG281\bin\Debug\Project_PRG.exe.config
+C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project\PRG281\bin\Debug\Project_PRG.exe
+C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project\PRG281\bin\Debug\Project_PRG.pdb
+C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project\PRG281\obj\Debug\Project_PRG.Properties.Resources.resources
+C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project\PRG281\obj\Debug\Project_PRG.csproj.CoreCompileInputs.cache
+C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project\PRG281\obj\Debug\Project_PRG.exe
+C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project\PRG281\obj\Debug\Project_PRG.pdb
