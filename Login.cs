@@ -31,11 +31,7 @@ namespace Project_PRG
 
         private void button1_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD:Login.cs
 
-=======
-            //test
->>>>>>> master:Form1.cs
         }
     }
 }
