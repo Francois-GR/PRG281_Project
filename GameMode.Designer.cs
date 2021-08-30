@@ -29,44 +29,34 @@ namespace Project_PRG
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnGenreToArt = new System.Windows.Forms.Button();
+            this.btnArtToSong = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnGenreToArt
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(0)))));
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(512, 177);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(260, 52);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Match Genre to Artist";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnGenreToArt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(0)))));
+            this.btnGenreToArt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenreToArt.Location = new System.Drawing.Point(512, 177);
+            this.btnGenreToArt.Name = "btnGenreToArt";
+            this.btnGenreToArt.Size = new System.Drawing.Size(260, 52);
+            this.btnGenreToArt.TabIndex = 0;
+            this.btnGenreToArt.Text = "Match Genre to Artist";
+            this.btnGenreToArt.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnArtToSong
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(0)))));
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(512, 286);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(260, 52);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Match Artist to Song";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(0)))));
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(512, 386);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(260, 52);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Exit";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnArtToSong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(0)))));
+            this.btnArtToSong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnArtToSong.Location = new System.Drawing.Point(512, 286);
+            this.btnArtToSong.Name = "btnArtToSong";
+            this.btnArtToSong.Size = new System.Drawing.Size(260, 52);
+            this.btnArtToSong.TabIndex = 1;
+            this.btnArtToSong.Text = "Match Artist to Song";
+            this.btnArtToSong.UseVisualStyleBackColor = false;
+            this.btnArtToSong.Click += new System.EventHandler(this.btnArtToSong_Click);
             // 
             // label1
             // 
@@ -80,16 +70,28 @@ namespace Project_PRG
             this.label1.Text = "Game Modes";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(190)))), ((int)(((byte)(0)))));
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(512, 393);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(260, 54);
+            this.btnExit.TabIndex = 4;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // GameMode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.ClientSize = new System.Drawing.Size(1357, 634);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnArtToSong);
+            this.Controls.Add(this.btnGenreToArt);
             this.Name = "GameMode";
             this.Text = "GameMode";
             this.ResumeLayout(false);
@@ -99,9 +101,9 @@ namespace Project_PRG
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnGenreToArt;
+        private System.Windows.Forms.Button btnArtToSong;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnExit;
     }
 }

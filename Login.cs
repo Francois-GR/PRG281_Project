@@ -36,7 +36,34 @@ namespace Project_PRG
         {       
             Validation validation = new Validation();
             string userName = txtUserName.Text;
+            string password = txtPassword.Text;
 
+            if(validation.validateUserName(userName) && validation.validatePassword(password))
+            {
+                if (validation.validateUser(userName, password))
+                {
+                    MessageBox.Show("Welcome");
+                    Menu menuForm = new Menu(new Player(userName, password));// send current player data into the menu for further use
+                    menuForm.Show();
+                    this.Hide();
+                    
+                }
+              
+            }
+           
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMoveToSignUp_Click(object sender, EventArgs e)
+        {
+            Signup signupFrom = new Signup();
+            signupFrom.Show();
+            this.Hide();
         }
     }
 }

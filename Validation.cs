@@ -22,10 +22,7 @@ namespace Project_PRG
                    throw new validationException("please enter password");
                    
                 }
-                else if(password.Length < 8)
-                {
-                    throw new validationException("you password needs at least 8 characters");
-                }
+                
 
             }
             catch(validationException e)
@@ -69,22 +66,38 @@ namespace Project_PRG
                 {
                     if (person.Name == playerToValidate.Name)
                     {
-                        if (person.compareTo(playerToValidate) == 0)
+                        if (person.CompareTo(playerToValidate) == 0)
                         {
                             return validated = true;
                         }
                     }
                 }
-                throw new validationException("User not found");
+                throw new validationException("invalid username or password");
             }
             catch(validationException e)
             {
                 MessageBox.Show(e.Message);
                 validated = false; 
-
-
             }
             return validated;
+
+        }
+
+        public bool searchUser(string username)
+        {
+            bool found = false;
+            DataHandler data = new DataHandler();
+            List<Player> players = data.GetPlayers();
+
+            foreach (Player player in players)
+            {
+                if(player.Name == username)
+                {
+                    found = true;
+                    return found;
+                }
+            }
+            return found;
 
         }
 

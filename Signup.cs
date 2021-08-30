@@ -19,11 +19,74 @@ namespace Project_PRG
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Random comment for testing
+            
+        }
 
-            // Test comment 2
+        private void btnMoveToLogIn_Click(object sender, EventArgs e)
+        {
+            Login loginForm = new Login();
+            loginForm.Show();
+            this.Hide();
 
-            // oqufgigufiw
+
+        }
+
+        private void btnSignup_Click(object sender, EventArgs e)
+        {
+            bool validated = false;
+            Validation validation = new Validation();
+            DataHandler data = new DataHandler();
+            string username = txtUserName.Text;
+            string password = txtPassword.Text;
+            string passwordConfirm = txtConfirm.Text;
+
+            try
+            {
+                if (validation.validatePassword(password) && validation.validateUserName(username)){
+                    if (password == passwordConfirm)
+                    {
+                        if (!validation.searchUser(username))// see if username already exists, username has to be unique
+                        {
+                            validated = true;
+                        }
+                        else
+                        {
+                            txtUserName.Clear();
+                            validated = false;
+                            throw new validationException("User already exists");
+                        }
+
+                    }
+                    else
+                    {
+                        txtPassword.Clear();
+                        txtConfirm.Clear();
+                        txtPassword.Focus();
+                        validated = false;
+                        throw new validationException("passwords do not match, please try again");
+                    }
+                }
+                
+
+               
+            }
+            catch(validationException err)
+            {
+                MessageBox.Show(err.Message);
+                validated = false;
+
+            }
+
+            if (validated)
+            {
+                Player player = new Player(username, password);
+                data.AddPlayer(player);
+                Menu menuForm = new Menu(player);// send current player data into the menu for further use
+                menuForm.Show();
+                this.Hide();
+            }
+
+            
         }
     }
 }

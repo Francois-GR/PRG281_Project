@@ -93,6 +93,7 @@
     <Compile Include="Signup.Designer.cs">
       <DependentUpon>Signup.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserAlreadyExists.cs" />
     <Compile Include="Validation.cs" />
     <Compile Include="validationException.cs" />
     <EmbeddedResource Include="ArtistForm.resx">

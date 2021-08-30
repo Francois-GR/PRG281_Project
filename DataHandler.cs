@@ -19,5 +19,10 @@ namespace Project_PRG
         }
 
         public List<Player> GetPlayers() { return Players; }
+        public void AddPlayer(object player)
+        {
+            Player playerToAdd = (Player)player;
+            Players.Add(playerToAdd);
+        }
     }
 }

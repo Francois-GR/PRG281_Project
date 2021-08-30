@@ -12,9 +12,14 @@ namespace Project_PRG
 {
     public partial class Menu : Form
     {
-        public Menu()
+        public Menu(Player player)
         {
             InitializeComponent();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

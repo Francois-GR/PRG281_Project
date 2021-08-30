@@ -35,7 +35,7 @@ namespace Project_PRG
         // Reset player score back to zero
         public void ResetScore() { Score = 0; }
 
-        public int compareTo(object otherPlayer)
+        public int CompareTo(object otherPlayer)
         {
             Player playerToCompare = (Player)otherPlayer;
             return this.password.CompareTo(playerToCompare.GetPassword());
