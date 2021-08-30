@@ -59,6 +59,32 @@ namespace Project_PRG
 
         public bool validateUser(string username,string password)
         {
+            bool validated = false;
+            DataHandler data = new DataHandler();
+            List<Player> players = data.GetPlayers();
+            Player playerToValidate = new Player(username, password);
+            try
+            {
+                foreach (Player person in players)
+                {
+                    if (person.Name == playerToValidate.Name)
+                    {
+                        if (person.compareTo(playerToValidate) == 0)
+                        {
+                            return validated = true;
+                        }
+                    }
+                }
+                throw new validationException("User not found");
+            }
+            catch(validationException e)
+            {
+                MessageBox.Show(e.Message);
+                validated = false; 
+
+
+            }
+            return validated;
 
         }
 
