@@ -16,6 +16,33 @@ namespace Project_PRG
         {
             InitializeComponent();
         }
+        public GameMode(Player player, int players = 1)
+        {
+            InitializeComponent();
+            try
+            {
+                if (players == 1)
+                {
+                    lblPlayerMode.Text = "Single Player";
+
+                }
+                else if (players == 2)
+                {
+                    lblPlayerMode.Text = "Multiplayer";
+                }
+                else
+                {
+                    throw new playerModeException("sorry there was a error, please try again");
+                }
+            }
+            catch(playerModeException e)
+            {
+                MessageBox.Show(e.Message);
+                Menu menuForm = new Menu(player);
+                menuForm.Show();
+            }
+
+        }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -32,6 +59,11 @@ namespace Project_PRG
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnGenreToArt_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

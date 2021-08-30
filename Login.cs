@@ -42,7 +42,7 @@ namespace Project_PRG
             {
                 if (validation.validateUser(userName, password))
                 {
-                    MessageBox.Show("Welcome");
+                    MessageBox.Show($"Welcome back {userName}");
                     Menu menuForm = new Menu(new Player(userName, password));// send current player data into the menu for further use
                     menuForm.Show();
                     this.Hide();

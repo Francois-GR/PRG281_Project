@@ -12,6 +12,7 @@ namespace Project_PRG
         private string password;
         private int score;
 
+        public Player() { }
         public Player(string Name, string Password)
         {
             this.name = Name;

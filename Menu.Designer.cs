@@ -33,6 +33,7 @@ namespace Project_PRG
             this.btnMultiplayer = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.lblWelcome = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSinglePlayer
@@ -45,6 +46,7 @@ namespace Project_PRG
             this.btnSinglePlayer.TabIndex = 1;
             this.btnSinglePlayer.Text = "Single player";
             this.btnSinglePlayer.UseVisualStyleBackColor = false;
+            this.btnSinglePlayer.Click += new System.EventHandler(this.btnSinglePlayer_Click);
             // 
             // btnMultiplayer
             // 
@@ -56,6 +58,7 @@ namespace Project_PRG
             this.btnMultiplayer.TabIndex = 2;
             this.btnMultiplayer.Text = "Multi Player";
             this.btnMultiplayer.UseVisualStyleBackColor = false;
+            this.btnMultiplayer.Click += new System.EventHandler(this.btnMultiplayer_Click);
             // 
             // btnExit
             // 
@@ -81,12 +84,25 @@ namespace Project_PRG
             this.label4.TabIndex = 16;
             this.label4.Text = "A Great Name for the game";
             // 
+            // lblWelcome
+            // 
+            this.lblWelcome.AutoSize = true;
+            this.lblWelcome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.lblWelcome.Location = new System.Drawing.Point(12, 9);
+            this.lblWelcome.Name = "lblWelcome";
+            this.lblWelcome.Size = new System.Drawing.Size(174, 41);
+            this.lblWelcome.TabIndex = 17;
+            this.lblWelcome.Text = "Welcome ";
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.ClientSize = new System.Drawing.Size(1487, 879);
+            this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnMultiplayer);
@@ -104,5 +120,6 @@ namespace Project_PRG
         private System.Windows.Forms.Button btnMultiplayer;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblWelcome;
     }
 }
