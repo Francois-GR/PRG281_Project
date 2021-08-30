@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project_PRG
 {
-    class Player
+    public class Player
     {
         private string Name;
         private string Password;
@@ -17,6 +17,12 @@ namespace Project_PRG
             this.Name = Name;
             this.Password = Password;
         }
+
+        // Get the name of the player
+        public string GetPlayerName() { return Name; }
+
+        // Get the player password
+        public string GetPassword() { return Password; }
 
         // Add score to the player by a custom amount. Default is 1
         public void AddScore(int Amount = 1) { Score += Amount; }
