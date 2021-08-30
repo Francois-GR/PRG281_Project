@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArtistForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArtistForm.Designer.cs">
+      <DependentUpon>ArtistForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +63,12 @@
     </Compile>
     <Compile Include="GameMode.Designer.cs">
       <DependentUpon>GameMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenreForm.Designer.cs">
+      <DependentUpon>GenreForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -77,11 +89,17 @@
     <Compile Include="Signup.Designer.cs">
       <DependentUpon>Signup.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ArtistForm.resx">
+      <DependentUpon>ArtistForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GameMode.resx">
       <DependentUpon>GameMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenreForm.resx">
+      <DependentUpon>GenreForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
