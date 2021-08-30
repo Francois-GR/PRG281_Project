@@ -24,7 +24,7 @@ namespace Project_PRG
 
         private void label3_Click(object sender, EventArgs e)
         {
-
+            //hello from the other side
         }
     }
 }
