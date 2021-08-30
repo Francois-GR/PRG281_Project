@@ -1,7 +1,7 @@
 ﻿
 namespace Project_PRG
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.
@@ -87,6 +87,7 @@ namespace Project_PRG
             this.button1.TabIndex = 5;
             this.button1.Text = "Log In";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Project_PRG
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -27,6 +27,11 @@ namespace Project_PRG
             //hello from the other side.
             //dfgdasfrgads
             //hello julle van megan
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
