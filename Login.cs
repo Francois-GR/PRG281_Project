@@ -24,13 +24,18 @@ namespace Project_PRG
 
         private void label3_Click(object sender, EventArgs e)
         {
-            //hello from the other side.
-            //dfgdasfrgads
-            //hello julle van megan
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnLogIn_Click(object sender, EventArgs e)
+        {       
+            Validation validation = new Validation();
+            string userName = txtUserName.Text;
 
         }
     }

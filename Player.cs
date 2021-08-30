@@ -8,15 +8,18 @@ namespace Project_PRG
 {
     class Player
     {
-        private string Name;
-        private string Password;
-        private int Score;
+        private string name;
+        private string password;
+        private int score;
 
         public Player(string Name, string Password)
         {
-            this.Name = Name;
-            this.Password = Password;
+            this.name = Name;
+            this.password = Password;
         }
+
+        public string Name { get => name; set => name = value; }
+        public int Score { get => score; set => score = value; }
 
         // Add score to the player by a custom amount. Default is 1
         public void AddScore(int Amount = 1) { Score += Amount; }
