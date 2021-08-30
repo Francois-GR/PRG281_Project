@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Project_PRG
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -31,7 +31,11 @@ namespace Project_PRG
 
         private void button1_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD:Login.cs
+
+=======
             //test
+>>>>>>> master:Form1.cs
         }
     }
 }
