@@ -69,7 +69,7 @@ namespace Project_PRG
                 string SecondPlayername = txtSecondPlayer.Text;
                 if (SecondPlayername == string.Empty)
                 {
-                    SecondPlayername = "Guest";                     
+                    SecondPlayername = "Guest";                    
                     
                 }
                 Player SecondPlayer = new Player(SecondPlayername, "");

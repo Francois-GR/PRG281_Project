@@ -28,30 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grpArtist = new System.Windows.Forms.GroupBox();
             this.ArtistListBox = new System.Windows.Forms.CheckedListBox();
             this.ScoreLabel = new System.Windows.Forms.Label();
-            this.SubmitButton = new System.Windows.Forms.Button();
-            this.TimeLabel = new System.Windows.Forms.Label();
-            this.SongNamesGroupBox = new System.Windows.Forms.GroupBox();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.grpSongName = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.InstructionalTextLabel = new System.Windows.Forms.Label();
             this.lblPlayerNameLabel = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnStart = new System.Windows.Forms.Button();
+            this.grpArtist.SuspendLayout();
+            this.grpSongName.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // grpArtist
             // 
-            this.groupBox1.Controls.Add(this.ArtistListBox);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(409, 45);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(182, 116);
-            this.groupBox1.TabIndex = 17;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Artists";
+            this.grpArtist.Controls.Add(this.ArtistListBox);
+            this.grpArtist.Font = new System.Drawing.Font("Segoe UI", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpArtist.ForeColor = System.Drawing.Color.White;
+            this.grpArtist.Location = new System.Drawing.Point(409, 45);
+            this.grpArtist.Margin = new System.Windows.Forms.Padding(2);
+            this.grpArtist.Name = "grpArtist";
+            this.grpArtist.Padding = new System.Windows.Forms.Padding(2);
+            this.grpArtist.Size = new System.Drawing.Size(182, 116);
+            this.grpArtist.TabIndex = 17;
+            this.grpArtist.TabStop = false;
+            this.grpArtist.Text = "Artists";
             // 
             // ArtistListBox
             // 
@@ -83,47 +87,57 @@
             this.ScoreLabel.Name = "ScoreLabel";
             this.ScoreLabel.Size = new System.Drawing.Size(132, 45);
             this.ScoreLabel.TabIndex = 16;
-            this.ScoreLabel.Text = "Score: 3";
+            this.ScoreLabel.Text = "Score: 0";
             // 
-            // SubmitButton
+            // btnSubmit
             // 
-            this.SubmitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SubmitButton.BackColor = System.Drawing.Color.Lime;
-            this.SubmitButton.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SubmitButton.ForeColor = System.Drawing.Color.Black;
-            this.SubmitButton.Location = new System.Drawing.Point(411, 166);
-            this.SubmitButton.Margin = new System.Windows.Forms.Padding(2);
-            this.SubmitButton.Name = "SubmitButton";
-            this.SubmitButton.Size = new System.Drawing.Size(180, 68);
-            this.SubmitButton.TabIndex = 15;
-            this.SubmitButton.Text = "Submit";
-            this.SubmitButton.UseVisualStyleBackColor = false;
+            this.btnSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSubmit.BackColor = System.Drawing.Color.Lime;
+            this.btnSubmit.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmit.ForeColor = System.Drawing.Color.Black;
+            this.btnSubmit.Location = new System.Drawing.Point(409, 182);
+            this.btnSubmit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(180, 68);
+            this.btnSubmit.TabIndex = 15;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = false;
             // 
-            // TimeLabel
+            // lblTime
             // 
-            this.TimeLabel.AutoSize = true;
-            this.TimeLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TimeLabel.ForeColor = System.Drawing.Color.Red;
-            this.TimeLabel.Location = new System.Drawing.Point(398, 5);
-            this.TimeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.TimeLabel.Name = "TimeLabel";
-            this.TimeLabel.Size = new System.Drawing.Size(200, 25);
-            this.TimeLabel.TabIndex = 14;
-            this.TimeLabel.Text = "Time Remaining: 02:21";
-            this.TimeLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lblTime.AutoSize = true;
+            this.lblTime.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.ForeColor = System.Drawing.Color.Red;
+            this.lblTime.Location = new System.Drawing.Point(398, 5);
+            this.lblTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(176, 25);
+            this.lblTime.TabIndex = 14;
+            this.lblTime.Text = "Time Remaining: 60";
+            this.lblTime.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // SongNamesGroupBox
+            // grpSongName
             // 
-            this.SongNamesGroupBox.Font = new System.Drawing.Font("Segoe UI", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SongNamesGroupBox.ForeColor = System.Drawing.Color.White;
-            this.SongNamesGroupBox.Location = new System.Drawing.Point(129, 81);
-            this.SongNamesGroupBox.Margin = new System.Windows.Forms.Padding(2);
-            this.SongNamesGroupBox.Name = "SongNamesGroupBox";
-            this.SongNamesGroupBox.Padding = new System.Windows.Forms.Padding(2);
-            this.SongNamesGroupBox.Size = new System.Drawing.Size(194, 54);
-            this.SongNamesGroupBox.TabIndex = 13;
-            this.SongNamesGroupBox.TabStop = false;
-            this.SongNamesGroupBox.Text = "Song Names";
+            this.grpSongName.Controls.Add(this.label1);
+            this.grpSongName.Font = new System.Drawing.Font("Segoe UI", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpSongName.ForeColor = System.Drawing.Color.White;
+            this.grpSongName.Location = new System.Drawing.Point(129, 81);
+            this.grpSongName.Margin = new System.Windows.Forms.Padding(2);
+            this.grpSongName.Name = "grpSongName";
+            this.grpSongName.Padding = new System.Windows.Forms.Padding(2);
+            this.grpSongName.Size = new System.Drawing.Size(194, 54);
+            this.grpSongName.TabIndex = 13;
+            this.grpSongName.TabStop = false;
+            this.grpSongName.Text = "Song Names";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(24, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(91, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Song Name";
             // 
             // InstructionalTextLabel
             // 
@@ -149,23 +163,58 @@
             this.lblPlayerNameLabel.TabIndex = 11;
             this.lblPlayerNameLabel.Text = "Player Name";
             // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.BackColor = System.Drawing.Color.Lime;
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.Black;
+            this.btnExit.Location = new System.Drawing.Point(14, 298);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(120, 57);
+            this.btnExit.TabIndex = 18;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnStart
+            // 
+            this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnStart.BackColor = System.Drawing.Color.Lime;
+            this.btnStart.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.ForeColor = System.Drawing.Color.Black;
+            this.btnStart.Location = new System.Drawing.Point(192, 182);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(2);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(180, 68);
+            this.btnStart.TabIndex = 21;
+            this.btnStart.Text = "Start";
+            this.btnStart.UseVisualStyleBackColor = false;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            // 
             // ArtistForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.ClientSize = new System.Drawing.Size(600, 366);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btnStart);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.grpArtist);
             this.Controls.Add(this.ScoreLabel);
-            this.Controls.Add(this.SubmitButton);
-            this.Controls.Add(this.TimeLabel);
-            this.Controls.Add(this.SongNamesGroupBox);
+            this.Controls.Add(this.btnSubmit);
+            this.Controls.Add(this.lblTime);
+            this.Controls.Add(this.grpSongName);
             this.Controls.Add(this.InstructionalTextLabel);
             this.Controls.Add(this.lblPlayerNameLabel);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ArtistForm";
             this.Text = "ArtistForm";
-            this.groupBox1.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.ArtistForm_Load);
+            this.grpArtist.ResumeLayout(false);
+            this.grpSongName.ResumeLayout(false);
+            this.grpSongName.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -173,13 +222,16 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grpArtist;
         private System.Windows.Forms.CheckedListBox ArtistListBox;
         private System.Windows.Forms.Label ScoreLabel;
-        private System.Windows.Forms.Button SubmitButton;
-        private System.Windows.Forms.Label TimeLabel;
-        private System.Windows.Forms.GroupBox SongNamesGroupBox;
+        private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Label lblTime;
+        private System.Windows.Forms.GroupBox grpSongName;
         private System.Windows.Forms.Label InstructionalTextLabel;
         private System.Windows.Forms.Label lblPlayerNameLabel;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnStart;
     }
 }

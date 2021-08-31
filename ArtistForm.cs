@@ -30,5 +30,47 @@ namespace Project_PRG
                 lblPlayerNameLabel.Text += $" and {player2.Name}";
             }
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void ArtistForm_Load(object sender, EventArgs e)
+        {
+            grpArtist.Visible = false;
+            grpSongName.Visible = false;
+            btnSubmit.Visible = false;
+            lblTime.Visible = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            grpArtist.Visible = true;
+            grpSongName.Visible = true;
+            btnSubmit.Visible = true;
+            lblTime.Visible = true;
+
+            
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            grpArtist.Visible = true;
+            grpSongName.Visible = true;
+            btnSubmit.Visible = true;
+            lblTime.Visible = true;
+
+            
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            grpArtist.Visible = true;
+            grpSongName.Visible = true;
+            btnSubmit.Visible = true;
+            lblTime.Visible = true;
+            btnStart.Visible = false ;
+        }
     }
 }
