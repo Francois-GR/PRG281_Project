@@ -124,8 +124,9 @@ namespace Project_PRG
             while (previousIndecies.Contains(index))
             {
                 index = random.Next(dataHandler.GetArtist().Count);
-                previousIndecies.Add(index);
             }
+
+            previousIndecies.Add(index);
 
             activeArtist = dataHandler.GetArtist()[index];
 
