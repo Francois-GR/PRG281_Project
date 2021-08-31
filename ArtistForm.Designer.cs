@@ -35,12 +35,12 @@
             this.btnSubmit = new System.Windows.Forms.Button();
             this.lblTime = new System.Windows.Forms.Label();
             this.grpSongName = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.InstructionalTextLabel = new System.Windows.Forms.Label();
             this.lblPlayerNameLabel = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.SongListRichTextbox = new System.Windows.Forms.RichTextBox();
             this.grpArtist.SuspendLayout();
             this.grpSongName.SuspendLayout();
             this.SuspendLayout();
@@ -118,27 +118,17 @@
             // 
             // grpSongName
             // 
-            this.grpSongName.Controls.Add(this.label1);
+            this.grpSongName.Controls.Add(this.SongListRichTextbox);
             this.grpSongName.Font = new System.Drawing.Font("Segoe UI", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpSongName.ForeColor = System.Drawing.Color.White;
-            this.grpSongName.Location = new System.Drawing.Point(172, 100);
+            this.grpSongName.Location = new System.Drawing.Point(19, 81);
             this.grpSongName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpSongName.Name = "grpSongName";
             this.grpSongName.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grpSongName.Size = new System.Drawing.Size(259, 66);
+            this.grpSongName.Size = new System.Drawing.Size(263, 141);
             this.grpSongName.TabIndex = 13;
             this.grpSongName.TabStop = false;
             this.grpSongName.Text = "Song Names";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 27);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Song Name";
             // 
             // InstructionalTextLabel
             // 
@@ -183,7 +173,7 @@
             this.btnStart.BackColor = System.Drawing.Color.Lime;
             this.btnStart.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStart.ForeColor = System.Drawing.Color.Black;
-            this.btnStart.Location = new System.Drawing.Point(256, 224);
+            this.btnStart.Location = new System.Drawing.Point(19, 279);
             this.btnStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(240, 84);
@@ -196,6 +186,15 @@
             // 
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // SongListRichTextbox
+            // 
+            this.SongListRichTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.SongListRichTextbox.Location = new System.Drawing.Point(7, 29);
+            this.SongListRichTextbox.Name = "SongListRichTextbox";
+            this.SongListRichTextbox.Size = new System.Drawing.Size(250, 107);
+            this.SongListRichTextbox.TabIndex = 0;
+            this.SongListRichTextbox.Text = "";
             // 
             // ArtistForm
             // 
@@ -218,7 +217,6 @@
             this.Load += new System.EventHandler(this.ArtistForm_Load);
             this.grpArtist.ResumeLayout(false);
             this.grpSongName.ResumeLayout(false);
-            this.grpSongName.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -235,8 +233,8 @@
         private System.Windows.Forms.Label InstructionalTextLabel;
         private System.Windows.Forms.Label lblPlayerNameLabel;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.RichTextBox SongListRichTextbox;
     }
 }

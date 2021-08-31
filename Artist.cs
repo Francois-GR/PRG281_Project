@@ -21,7 +21,9 @@ namespace Project_PRG
             ArtistMusic.Add(new Music(songname, genre));
         }
 
+        public List<Music> GetMusic() { return ArtistMusic; }
 
+        public string GetArtistName() { return ArtistName; }
     }
     
 }

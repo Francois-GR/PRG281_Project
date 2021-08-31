@@ -15,6 +15,8 @@ namespace Project_PRG
         Player player1;
         Player player2;
         private int Time = 60;
+        DataHandler dataHandler = new DataHandler();
+
         public ArtistForm()
         {
             InitializeComponent();
@@ -79,6 +81,18 @@ namespace Project_PRG
         {
             if (Time > 0)
                 lblTime.Text = Time--.ToString();
+        }
+
+        private void UpdateSongList()
+        {
+            Random random = new Random(dataHandler.GetArtist().Count);
+            SongListRichTextbox.Clear();
+            Artist a = dataHandler.GetArtist()[random.Next()];
+
+            foreach (Music m in a.GetMusic())
+            {
+                SongListRichTextbox.Text += m.GetSongName();
+            }
         }
     }
 }

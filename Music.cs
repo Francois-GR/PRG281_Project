@@ -18,7 +18,7 @@ namespace Project_PRG
         Dubstep
     };
 
-    class Music
+    public class Music
     {
         private string Name;
         private Genre Genre;
@@ -28,5 +28,9 @@ namespace Project_PRG
             this.Name = Name;
             this.Genre = Genre;
         }
+
+        public string GetSongName() { return Name; }
+
+        public Genre GetGenre() { return Genre; }
     }
 }
