@@ -13,7 +13,8 @@ namespace Project_PRG
     public partial class ArtistForm : Form
     {
         Player player1;
-        Player player2; 
+        Player player2;
+        private int Time = 60;
         public ArtistForm()
         {
             InitializeComponent();
@@ -70,8 +71,14 @@ namespace Project_PRG
             grpSongName.Visible = true;
             btnSubmit.Visible = true;
             lblTime.Visible = true;
-            btnStart.Visible = false ;
+            btnStart.Visible = false;
             //StartGame();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (Time > 0)
+                lblTime.Text = Time--.ToString();
         }
     }
 }
