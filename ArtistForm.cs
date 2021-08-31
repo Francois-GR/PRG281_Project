@@ -40,6 +40,7 @@ namespace Project_PRG
                 lblPlayerNameLabel.Text += $" and {this.player2.Name}";
             }
             ActivePlayer = this.player1;
+            lblPlayerNameLabel.Text = ActivePlayer.GetPlayerName();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -53,6 +54,7 @@ namespace Project_PRG
             grpSongName.Visible = false;
             btnSubmit.Visible = false;
             lblTime.Visible = false;
+            lblPlayerNameLabel.Text = ActivePlayer.GetPlayerName();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -102,6 +104,7 @@ namespace Project_PRG
                         lblPlayerNameLabel.Text = player2.Name;
                         ScoreLabel.Text = player2.Score.ToString();
                         Time = MaxTime;
+                        lblPlayerNameLabel.Text = ActivePlayer.GetPlayerName();
                     }
                     else
                         EndGame();
@@ -113,6 +116,7 @@ namespace Project_PRG
 
         private void EndGame()
         {
+            timer1.Stop();
             MessageBox.Show("Game is finished!");
         }
 
@@ -121,9 +125,14 @@ namespace Project_PRG
             Random random = new Random();
             int index = random.Next(dataHandler.GetArtist().Count);
 
+            int counter = 0;
             while (previousIndecies.Contains(index))
             {
                 index = random.Next(dataHandler.GetArtist().Count);
+                counter++;
+
+                if (counter > dataHandler.GetArtist().Count)
+                    break;
             }
 
             previousIndecies.Add(index);
@@ -174,6 +183,7 @@ namespace Project_PRG
                         lblPlayerNameLabel.Text = player2.Name;
                         ScoreLabel.Text = player2.Score.ToString();
                         Time = MaxTime;
+                        lblPlayerNameLabel.Text = ActivePlayer.GetPlayerName();
                     }
                     else
                         EndGame();

@@ -70,37 +70,20 @@ namespace Project_PRG
             lblPlayerNameLabel.Text = player1.Name;           
             
 
-<<<<<<< HEAD
+
             Random r = new Random();
             int randomIndex = r.Next(artistList.Count);
             Artist RandomArtist = artistList[randomIndex];
             lblArtsistName.Text = RandomArtist.GetArtistName();
             checkedIndices.Add(randomIndex);
             currentArtist = RandomArtist;
-=======
-            //Random r = new Random(data.)
-           
-          
->>>>>>> master
-
         }
-
-
-       
-
-
-        
-
-        
-     
 
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
             
         }
-
-     
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -128,8 +111,6 @@ namespace Project_PRG
             }
 
         }
-
-      
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
