@@ -79,6 +79,7 @@
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Music.cs" />
+    <Compile Include="MusicTimer.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="playerModeException.cs" />
     <Compile Include="Program.cs" />
