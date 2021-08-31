@@ -6,12 +6,15 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Project_PRG
 {
     public partial class GameMode : Form
     {
+        bool multiplayer = false;
+        Player MainPlayer;
         public GameMode()
         {
             InitializeComponent();
@@ -21,6 +24,10 @@ namespace Project_PRG
             InitializeComponent();
             try
             {
+                if(player!= null)
+                {
+                    this.MainPlayer = player;
+                }
                 if (players == 1)
                 {
                     lblPlayerMode.Text = "Single Player";
@@ -29,6 +36,8 @@ namespace Project_PRG
                 else if (players == 2)
                 {
                     lblPlayerMode.Text = "Multiplayer";
+                    multiplayer = true;
+                    
                 }
                 else
                 {
@@ -42,6 +51,8 @@ namespace Project_PRG
                 menuForm.Show();
             }
 
+
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -53,7 +64,25 @@ namespace Project_PRG
 
         private void btnArtToSong_Click(object sender, EventArgs e)
         {
-
+            if (multiplayer)
+            {
+                string SecondPlayername = txtSecondPlayer.Text;
+                if (SecondPlayername == string.Empty)
+                {
+                    SecondPlayername = "Guest";                     
+                    
+                }
+                Player SecondPlayer = new Player(SecondPlayername, "");
+                ArtistForm artistForm = new ArtistForm(MainPlayer, SecondPlayer);
+                artistForm.Show();
+                this.Hide();
+            }
+            else
+            {
+                ArtistForm genreFrom = new ArtistForm(MainPlayer);
+                genreFrom.Show();
+                this.Hide();
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -63,7 +92,36 @@ namespace Project_PRG
 
         private void btnGenreToArt_Click(object sender, EventArgs e)
         {
+            if (multiplayer)
+            {
+                string SecondPlayername = txtSecondPlayer.Text;
+                Player SecondPlayer = new Player(SecondPlayername, "");
+                GenreForm genreForm = new GenreForm(MainPlayer, SecondPlayer);
+                genreForm.Show();
+                this.Hide();
+            }
+            else
+            {
+                GenreForm genreFrom = new GenreForm(MainPlayer);
+                genreFrom.Show();
+                this.Hide();
+            }
+        }
 
+
+        
+        private void GameMode_Load(object sender, EventArgs e)
+        {
+            if (!multiplayer)
+            {
+                lblPromtName.Visible = false;
+                txtSecondPlayer.Visible = false;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

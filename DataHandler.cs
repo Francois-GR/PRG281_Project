@@ -9,6 +9,7 @@ namespace Project_PRG
     public class DataHandler
     {
         private List<Player> Players = new List<Player>();
+        
 
         public DataHandler()
         {
@@ -16,6 +17,7 @@ namespace Project_PRG
             Players.Add(new Player("Snoop", "Password1234"));
             Players.Add(new Player("Eddie", "ThisIsASafePassword"));
             Players.Add(new Player("Scarlett", "Pass1234567890"));
+
         }
 
         public List<Player> GetPlayers() { return Players; }

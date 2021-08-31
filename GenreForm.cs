@@ -26,14 +26,31 @@ namespace Project_PRG
             if(player2 != null)
             {
                 this.player2 = player2;
-                lblPlayerNameLabel.Text += $"and {player2.Name}";
+                lblPlayerNameLabel.Text += $" and {player2.Name}";
             }
 
         }
 
         private void GenreForm_Load(object sender, EventArgs e)
         {
+            ArtistGroupBox.Visible = false;
+            grpGenres.Visible = false;
+            btnSubmit.Visible = false;
+            lblInstruction.Text = "select the correct genres you think the artist is in";
 
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            ArtistGroupBox.Visible = true;
+            grpGenres.Visible = true;
+            btnSubmit.Visible = true;
+            btnStart.Visible = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

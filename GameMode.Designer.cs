@@ -34,6 +34,8 @@ namespace Project_PRG
             this.label1 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.lblPlayerMode = new System.Windows.Forms.Label();
+            this.txtSecondPlayer = new System.Windows.Forms.TextBox();
+            this.lblPromtName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnGenreToArt
@@ -95,12 +97,32 @@ namespace Project_PRG
             this.lblPlayerMode.TabIndex = 5;
             this.lblPlayerMode.Text = "Game Modes";
             // 
+            // txtSecondPlayer
+            // 
+            this.txtSecondPlayer.Location = new System.Drawing.Point(1115, 136);
+            this.txtSecondPlayer.Name = "txtSecondPlayer";
+            this.txtSecondPlayer.Size = new System.Drawing.Size(176, 20);
+            this.txtSecondPlayer.TabIndex = 6;
+            // 
+            // lblPromtName
+            // 
+            this.lblPromtName.AutoSize = true;
+            this.lblPromtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPromtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.lblPromtName.Location = new System.Drawing.Point(778, 127);
+            this.lblPromtName.Name = "lblPromtName";
+            this.lblPromtName.Size = new System.Drawing.Size(315, 29);
+            this.lblPromtName.TabIndex = 7;
+            this.lblPromtName.Text = "Enter Second players name:";
+            // 
             // GameMode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.ClientSize = new System.Drawing.Size(1357, 634);
+            this.Controls.Add(this.lblPromtName);
+            this.Controls.Add(this.txtSecondPlayer);
             this.Controls.Add(this.lblPlayerMode);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
@@ -108,6 +130,7 @@ namespace Project_PRG
             this.Controls.Add(this.btnGenreToArt);
             this.Name = "GameMode";
             this.Text = "GameMode";
+            this.Load += new System.EventHandler(this.GameMode_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,5 +143,7 @@ namespace Project_PRG
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label lblPlayerMode;
+        private System.Windows.Forms.TextBox txtSecondPlayer;
+        private System.Windows.Forms.Label lblPromtName;
     }
 }
