@@ -58,7 +58,7 @@ namespace Project_PRG
             timer1.Start();
             
 
-            Random r = new Random(data.)
+            //Random r = new Random(data.)
            
           
 

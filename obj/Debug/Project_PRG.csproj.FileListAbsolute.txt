@@ -46,3 +46,17 @@ E:\2021\Belgium\3. Programming 281\PRG281 Assignments\Prg281_Project\PRG281_Proj
 E:\2021\Belgium\3. Programming 281\PRG281 Assignments\Prg281_Project\PRG281_Project\obj\Debug\Project_PRG.csproj.CoreCompileInputs.cache
 E:\2021\Belgium\3. Programming 281\PRG281 Assignments\Prg281_Project\PRG281_Project\obj\Debug\Project_PRG.exe
 E:\2021\Belgium\3. Programming 281\PRG281 Assignments\Prg281_Project\PRG281_Project\obj\Debug\Project_PRG.pdb
+C:\Users\joube\source\repos\PRG281_Project_Collab\PRG281_Project\obj\Debug\Project_PRG.csprojAssemblyReference.cache
+C:\Users\joube\source\repos\PRG281_Project_Collab\PRG281_Project\obj\Debug\Project_PRG.ArtistForm.resources
+C:\Users\joube\source\repos\PRG281_Project_Collab\PRG281_Project\obj\Debug\Project_PRG.Login.resources
+C:\Users\joube\source\repos\PRG281_Project_Collab\PRG281_Project\obj\Debug\Project_PRG.GameMode.resources
+C:\Users\joube\source\repos\PRG281_Project_Collab\PRG281_Project\obj\Debug\Project_PRG.GenreForm.resources
+C:\Users\joube\source\repos\PRG281_Project_Collab\PRG281_Project\obj\Debug\Project_PRG.Menu.resources
+C:\Users\joube\source\repos\PRG281_Project_Collab\PRG281_Project\obj\Debug\Project_PRG.Properties.Resources.resources
+C:\Users\joube\source\repos\PRG281_Project_Collab\PRG281_Project\obj\Debug\Project_PRG.Signup.resources
+C:\Users\joube\source\repos\PRG281_Project_Collab\PRG281_Project\obj\Debug\Project_PRG.csproj.GenerateResource.cache
+C:\Users\joube\source\repos\PRG281_Project_Collab\PRG281_Project\obj\Debug\Project_PRG.exe
+C:\Users\joube\source\repos\PRG281_Project_Collab\PRG281_Project\obj\Debug\Project_PRG.pdb
+C:\Users\joube\source\repos\PRG281_Project_Collab\PRG281_Project\bin\Debug\Project_PRG.exe.config
+C:\Users\joube\source\repos\PRG281_Project_Collab\PRG281_Project\bin\Debug\Project_PRG.exe
+C:\Users\joube\source\repos\PRG281_Project_Collab\PRG281_Project\bin\Debug\Project_PRG.pdb
