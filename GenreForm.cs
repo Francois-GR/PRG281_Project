@@ -67,7 +67,7 @@ namespace Project_PRG
             timer1.Start();
 
 
-            lblPlayerNameLabel.Text = player1.Name;           
+            lblPlayerNameLabel.Text = "First PLayer: "+player1.Name;           
             
 
 
@@ -94,7 +94,7 @@ namespace Project_PRG
         {
             if (Time >= 0)
             {
-                TimeLabel.Text = Time--.ToString();
+                TimeLabel.Text ="Time remaining: " + Time--.ToString();
             }
             else
             {
@@ -105,14 +105,16 @@ namespace Project_PRG
                 else if (turn == 1)
                 {
 
-                    lblPlayerNameLabel.Text = player2.Name;
+                    lblPlayerNameLabel.Text = "Player two: "+player2.Name;
                     Time = 60;
                     turn++;
                     currentPlayer = player2;
-                    MessageBox.Show("Player 2's turn");
-                    timer1.Stop();
-                    lblScore.Text = "Score: 0";
                     
+                    
+                    lblScore.Text = "Score: 0";
+                   
+                    
+
                 }
                 else
                 {
@@ -124,11 +126,10 @@ namespace Project_PRG
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            if (turn == 2)
-            {
-                timer1.Start();
-                turn++;
-            }
+
+
+            
+                       
             Random r = new Random();
             int randomIndex = r.Next(artistList.Count);
             
@@ -141,10 +142,12 @@ namespace Project_PRG
                 {
                     break;
                 }
+              
 
             }
 
             Artist RandomArtist = artistList[randomIndex];
+            checkedIndices.Add(randomIndex);
             lblArtsistName.Text = RandomArtist.GetArtistName();
 
             CheckAnswers(currentArtist);
