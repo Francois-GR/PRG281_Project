@@ -17,7 +17,7 @@ namespace Project_PRG
             Time = TimeToRunForInSeconds;
         }
 
-        public void Start(Action<int> TickFunction)
+        public int Start(Action<int> TickFunction)
         {
             // The function passed in needs to be marked "static"
             TickFunction(Time);
@@ -27,6 +27,7 @@ namespace Project_PRG
 
             if (Time > 0)
                 Start(TickFunction);
+            return Time;
         }
     }
 }

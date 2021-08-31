@@ -28,17 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.grpGenres = new System.Windows.Forms.GroupBox();
             this.GenresListBox = new System.Windows.Forms.CheckedListBox();
             this.ArtistGroupBox = new System.Windows.Forms.GroupBox();
+            this.lblArtsistName = new System.Windows.Forms.Label();
             this.lblScore = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.TimeLabel = new System.Windows.Forms.Label();
             this.lblInstruction = new System.Windows.Forms.Label();
             this.lblPlayerNameLabel = new System.Windows.Forms.Label();
-            this.lblArtsistName = new System.Windows.Forms.Label();
             this.btnStart = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.grpGenres.SuspendLayout();
             this.ArtistGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -94,6 +97,15 @@
             this.ArtistGroupBox.TabStop = false;
             this.ArtistGroupBox.Text = "Artist Name";
             // 
+            // lblArtsistName
+            // 
+            this.lblArtsistName.AutoSize = true;
+            this.lblArtsistName.Location = new System.Drawing.Point(15, 21);
+            this.lblArtsistName.Name = "lblArtsistName";
+            this.lblArtsistName.Size = new System.Drawing.Size(27, 19);
+            this.lblArtsistName.TabIndex = 0;
+            this.lblArtsistName.Text = "\" \"";
+            // 
             // lblScore
             // 
             this.lblScore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -124,6 +136,7 @@
             // 
             // TimeLabel
             // 
+            this.TimeLabel.AccessibleName = "timerForGenreFrom";
             this.TimeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.TimeLabel.AutoSize = true;
             this.TimeLabel.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -160,15 +173,6 @@
             this.lblPlayerNameLabel.TabIndex = 10;
             this.lblPlayerNameLabel.Text = "Player Name";
             // 
-            // lblArtsistName
-            // 
-            this.lblArtsistName.AutoSize = true;
-            this.lblArtsistName.Location = new System.Drawing.Point(15, 21);
-            this.lblArtsistName.Name = "lblArtsistName";
-            this.lblArtsistName.Size = new System.Drawing.Size(27, 19);
-            this.lblArtsistName.TabIndex = 0;
-            this.lblArtsistName.Text = "\" \"";
-            // 
             // btnStart
             // 
             this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -198,6 +202,15 @@
             this.button1.Text = "Exit";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // GenreForm
             // 
@@ -239,5 +252,7 @@
         private System.Windows.Forms.Label lblArtsistName;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button button1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
