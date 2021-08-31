@@ -17,6 +17,8 @@ namespace Project_PRG
 
         DataHandler data = new DataHandler();
 
+      
+
 
         Player player1;
         Player player2 = null;
@@ -36,7 +38,8 @@ namespace Project_PRG
                 lblPlayerNameLabel.Text += $" and {this.player2.Name}";
             }
 
-           
+ 
+
 
         }
 
@@ -56,10 +59,17 @@ namespace Project_PRG
             btnSubmit.Visible = true;
             btnStart.Visible = false;
             timer1.Start();
+
+           
+            List<Artist> artistList = data.GetArtist();
             
 
-            Random r = new Random(data.)
-           
+            Random r = new Random(artistList.Count);
+            Artist RandomArtist = artistList[r.Next(artistList.Count)];
+
+            lblArtsistName.Text = RandomArtist.ArtistName;
+
+
           
 
         }
