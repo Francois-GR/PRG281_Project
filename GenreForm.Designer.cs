@@ -216,7 +216,7 @@
             this.Controls.Add(this.lblPlayerNameLabel);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GenreForm";
-            this.Text = "GenreForm";
+            this.Text = "Match the artist to their genres";
             this.Load += new System.EventHandler(this.GenreForm_Load);
             this.grpGenres.ResumeLayout(false);
             this.ArtistGroupBox.ResumeLayout(false);

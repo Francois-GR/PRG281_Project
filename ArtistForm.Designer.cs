@@ -147,9 +147,9 @@
             this.InstructionalTextLabel.Location = new System.Drawing.Point(10, 22);
             this.InstructionalTextLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.InstructionalTextLabel.Name = "InstructionalTextLabel";
-            this.InstructionalTextLabel.Size = new System.Drawing.Size(324, 19);
+            this.InstructionalTextLabel.Size = new System.Drawing.Size(269, 19);
             this.InstructionalTextLabel.TabIndex = 12;
-            this.InstructionalTextLabel.Text = "Intructional text that tells the player what to do";
+            this.InstructionalTextLabel.Text = "Select all the correct songs of the artist";
             // 
             // lblPlayerNameLabel
             // 
@@ -210,7 +210,7 @@
             this.Controls.Add(this.lblPlayerNameLabel);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ArtistForm";
-            this.Text = "ArtistForm";
+            this.Text = "Match Artists to their music";
             this.Load += new System.EventHandler(this.ArtistForm_Load);
             this.grpArtist.ResumeLayout(false);
             this.grpSongName.ResumeLayout(false);
