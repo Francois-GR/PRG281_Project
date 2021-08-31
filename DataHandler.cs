@@ -20,6 +20,7 @@ namespace Project_PRG
             Players.Add(new Player("Snoop", "Password1234"));
             Players.Add(new Player("Eddie", "ThisIsASafePassword"));
             Players.Add(new Player("Scarlett", "Pass1234567890"));
+            Players.Add(new Player("a", "a"));
 
             //pop artists
             Artist a = new Artist("21 Pilots");

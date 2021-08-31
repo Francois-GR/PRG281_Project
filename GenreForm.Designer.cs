@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.grpGenres = new System.Windows.Forms.GroupBox();
-            this.GenresListBox = new System.Windows.Forms.CheckedListBox();
+            this.lsbGenre = new System.Windows.Forms.CheckedListBox();
             this.ArtistGroupBox = new System.Windows.Forms.GroupBox();
             this.lblArtsistName = new System.Windows.Forms.Label();
             this.lblScore = new System.Windows.Forms.Label();
@@ -47,7 +47,7 @@
             // 
             // grpGenres
             // 
-            this.grpGenres.Controls.Add(this.GenresListBox);
+            this.grpGenres.Controls.Add(this.lsbGenre);
             this.grpGenres.Font = new System.Drawing.Font("Segoe UI", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpGenres.ForeColor = System.Drawing.Color.White;
             this.grpGenres.Location = new System.Drawing.Point(380, 48);
@@ -59,15 +59,15 @@
             this.grpGenres.TabStop = false;
             this.grpGenres.Text = "Genres";
             // 
-            // GenresListBox
+            // lsbGenre
             // 
-            this.GenresListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.GenresListBox.CheckOnClick = true;
-            this.GenresListBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.GenresListBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GenresListBox.ForeColor = System.Drawing.Color.White;
-            this.GenresListBox.FormattingEnabled = true;
-            this.GenresListBox.Items.AddRange(new object[] {
+            this.lsbGenre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lsbGenre.CheckOnClick = true;
+            this.lsbGenre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lsbGenre.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lsbGenre.ForeColor = System.Drawing.Color.White;
+            this.lsbGenre.FormattingEnabled = true;
+            this.lsbGenre.Items.AddRange(new object[] {
             "Rock",
             "Pop",
             "Jazz",
@@ -76,11 +76,11 @@
             "Heavy Metal",
             "Gospel",
             "Dubstep"});
-            this.GenresListBox.Location = new System.Drawing.Point(2, 21);
-            this.GenresListBox.Margin = new System.Windows.Forms.Padding(2);
-            this.GenresListBox.Name = "GenresListBox";
-            this.GenresListBox.Size = new System.Drawing.Size(207, 169);
-            this.GenresListBox.TabIndex = 5;
+            this.lsbGenre.Location = new System.Drawing.Point(2, 21);
+            this.lsbGenre.Margin = new System.Windows.Forms.Padding(2);
+            this.lsbGenre.Name = "lsbGenre";
+            this.lsbGenre.Size = new System.Drawing.Size(207, 169);
+            this.lsbGenre.TabIndex = 5;
             // 
             // ArtistGroupBox
             // 
@@ -132,6 +132,7 @@
             this.btnSubmit.TabIndex = 13;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // TimeLabel
             // 
@@ -237,7 +238,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox grpGenres;
-        private System.Windows.Forms.CheckedListBox GenresListBox;
+        private System.Windows.Forms.CheckedListBox lsbGenre;
         private System.Windows.Forms.GroupBox ArtistGroupBox;
         private System.Windows.Forms.Label lblScore;
         private System.Windows.Forms.Button btnSubmit;

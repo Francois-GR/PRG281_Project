@@ -14,14 +14,19 @@ namespace Project_PRG
 
     public partial class GenreForm : Form
     {
+        int turn = 1;
 
         DataHandler data = new DataHandler();
 
-      
+        List<Artist> artistList = new List<Artist>();
 
+        List<int> checkedIndices = new List<int>();
 
         Player player1;
         Player player2 = null;
+        Player currentPlayer;
+
+        Artist currentArtist;
         public int Time = 60;
         public GenreForm()
         {
@@ -37,7 +42,8 @@ namespace Project_PRG
                 this.player2 = player2;
                 lblPlayerNameLabel.Text += $" and {this.player2.Name}";
             }
-
+            artistList = data.GetArtist();
+            currentPlayer = this.player1;
  
 
 
@@ -60,19 +66,19 @@ namespace Project_PRG
             btnStart.Visible = false;
             timer1.Start();
 
-           
-            List<Artist> artistList = data.GetArtist();
+
+            lblPlayerNameLabel.Text = player1.Name;           
             
 
-            Random r = new Random(artistList.Count);
-            Artist RandomArtist = artistList[r.Next(artistList.Count)];
-
-            lblArtsistName.Text = RandomArtist.ArtistName;
-
-
-          
+            Random r = new Random();
+            int randomIndex = r.Next(artistList.Count);
+            Artist RandomArtist = artistList[randomIndex];
+            lblArtsistName.Text = RandomArtist.GetArtistName();
+            checkedIndices.Add(randomIndex);
+            currentArtist = RandomArtist;
 
         }
+
 
        
 
@@ -92,7 +98,7 @@ namespace Project_PRG
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (Time > 0)
+            if (Time >= 0)
             {
                 TimeLabel.Text = Time--.ToString();
             }
@@ -102,8 +108,89 @@ namespace Project_PRG
                 {
                     //call endgame fomr
                 }
+                else if (turn == 1)
+                {
+                    lblPlayerNameLabel.Text = player2.Name;
+                    Time = 60;
+                    turn++;
+                    currentPlayer = player2;                    
+                }
+                else
+                {
+                    //call end game form
+                }
             }
 
+        }
+
+      
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            Random r = new Random();
+            int randomIndex = r.Next(artistList.Count);
+            
+            int count = 0;
+            while (checkedIndices.Contains(randomIndex))
+            {
+                randomIndex = r.Next(artistList.Count);
+                count++;
+                if(count> artistList.Count)
+                {
+                    break;
+                }
+
+            }
+
+            Artist RandomArtist = artistList[randomIndex];
+            lblArtsistName.Text = RandomArtist.GetArtistName();
+
+            CheckAnswers(currentArtist);
+
+            clearGenreBoxes();
+
+            currentArtist = RandomArtist;
+
+
+        }
+
+        public void CheckAnswers(Artist artist)
+        {
+            List<Music> artistMusic = artist.GetMusic();
+            List<Genre> artistGenres = new List<Genre>();
+           
+       
+
+            foreach (Music music  in artistMusic)
+            {
+                artistGenres.Add(music.GetGenre());
+            }
+
+            foreach (Genre artistGen in artistGenres)
+            {
+                if (lsbGenre.SelectedIndices.Contains((int)artistGen))
+                {                                     
+                    ++currentPlayer.Score;
+                    lblScore.Text = currentPlayer.Score.ToString();
+
+                };
+               
+
+
+
+            }
+            
+         
+
+           
+        }
+
+        private void clearGenreBoxes()
+        {
+            for (int i = 0; i < 8; i++)
+            {
+                lsbGenre.SetItemChecked(i, false);
+            }
         }
 
     }
