@@ -15,6 +15,8 @@ namespace Project_PRG
     public partial class GenreForm : Form
     {
 
+        DataHandler data = new DataHandler();
+
 
         Player player1;
         Player player2 = null;
@@ -54,7 +56,10 @@ namespace Project_PRG
             btnSubmit.Visible = true;
             btnStart.Visible = false;
             timer1.Start();
-                    
+            
+
+            Random r = new Random(data.)
+           
           
 
         }
@@ -83,7 +88,10 @@ namespace Project_PRG
             }
             else
             {
-
+                if (player2 == null)
+                {
+                    //call endgame fomr
+                }
             }
 
         }
