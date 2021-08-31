@@ -35,12 +35,12 @@
             this.btnSubmit = new System.Windows.Forms.Button();
             this.lblTime = new System.Windows.Forms.Label();
             this.grpSongName = new System.Windows.Forms.GroupBox();
+            this.SongListRichTextbox = new System.Windows.Forms.RichTextBox();
             this.InstructionalTextLabel = new System.Windows.Forms.Label();
             this.lblPlayerNameLabel = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.SongListRichTextbox = new System.Windows.Forms.RichTextBox();
             this.grpArtist.SuspendLayout();
             this.grpSongName.SuspendLayout();
             this.SuspendLayout();
@@ -77,6 +77,7 @@
             this.ArtistListBox.Name = "ArtistListBox";
             this.ArtistListBox.Size = new System.Drawing.Size(237, 115);
             this.ArtistListBox.TabIndex = 7;
+            this.ArtistListBox.SelectedIndexChanged += new System.EventHandler(this.ArtistListBox_SelectedIndexChanged);
             // 
             // ScoreLabel
             // 
@@ -103,6 +104,7 @@
             this.btnSubmit.TabIndex = 15;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // lblTime
             // 
@@ -129,6 +131,17 @@
             this.grpSongName.TabIndex = 13;
             this.grpSongName.TabStop = false;
             this.grpSongName.Text = "Song Names";
+            // 
+            // SongListRichTextbox
+            // 
+            this.SongListRichTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.SongListRichTextbox.Enabled = false;
+            this.SongListRichTextbox.Location = new System.Drawing.Point(7, 29);
+            this.SongListRichTextbox.Name = "SongListRichTextbox";
+            this.SongListRichTextbox.ReadOnly = true;
+            this.SongListRichTextbox.Size = new System.Drawing.Size(250, 107);
+            this.SongListRichTextbox.TabIndex = 0;
+            this.SongListRichTextbox.Text = "";
             // 
             // InstructionalTextLabel
             // 
@@ -186,15 +199,6 @@
             // 
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // SongListRichTextbox
-            // 
-            this.SongListRichTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.SongListRichTextbox.Location = new System.Drawing.Point(7, 29);
-            this.SongListRichTextbox.Name = "SongListRichTextbox";
-            this.SongListRichTextbox.Size = new System.Drawing.Size(250, 107);
-            this.SongListRichTextbox.TabIndex = 0;
-            this.SongListRichTextbox.Text = "";
             // 
             // ArtistForm
             // 

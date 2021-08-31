@@ -70,12 +70,18 @@ namespace Project_PRG
             lblPlayerNameLabel.Text = player1.Name;           
             
 
+<<<<<<< HEAD
             Random r = new Random();
             int randomIndex = r.Next(artistList.Count);
             Artist RandomArtist = artistList[randomIndex];
             lblArtsistName.Text = RandomArtist.GetArtistName();
             checkedIndices.Add(randomIndex);
             currentArtist = RandomArtist;
+=======
+            //Random r = new Random(data.)
+           
+          
+>>>>>>> master
 
         }
 
