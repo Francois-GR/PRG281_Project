@@ -14,10 +14,12 @@ namespace Project_PRG
 
     public partial class GenreForm : Form
     {
-       
 
-        Player player1 = new Player();
-        Player player2 = new Player();
+        DataHandler data = new DataHandler();
+
+
+        Player player1;
+        Player player2 = null;
         public int Time = 60;
         public GenreForm()
         {
@@ -31,7 +33,7 @@ namespace Project_PRG
             if(player2 != null)
             {
                 this.player2 = player2;
-                lblPlayerNameLabel.Text += $" and {player2.Name}";
+                lblPlayerNameLabel.Text += $" and {this.player2.Name}";
             }
 
            
@@ -54,20 +56,18 @@ namespace Project_PRG
             btnSubmit.Visible = true;
             btnStart.Visible = false;
             timer1.Start();
-                    
+            
+
+            Random r = new Random(data.)
+           
           
 
         }
 
        
 
-        public static string TimeLeft;
 
-        public static void StartGame(int time)
-        {
-           
-
-        }
+        
 
         
      
@@ -78,17 +78,20 @@ namespace Project_PRG
             
         }
 
-        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
-        {
-            MusicTimer timer = new MusicTimer(60);
-            timer.Start(StartGame);
-        }
+     
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (Time > 0)
             {
                 TimeLabel.Text = Time--.ToString();
+            }
+            else
+            {
+                if (player2 == null)
+                {
+                    //call endgame fomr
+                }
             }
 
         }

@@ -40,7 +40,6 @@
             this.lblPlayerNameLabel = new System.Windows.Forms.Label();
             this.btnStart = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.grpGenres.SuspendLayout();
             this.ArtistGroupBox.SuspendLayout();
@@ -203,10 +202,6 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // backgroundWorker1
-            // 
-            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
-            // 
             // timer1
             // 
             this.timer1.Interval = 1000;
@@ -252,7 +247,6 @@
         private System.Windows.Forms.Label lblArtsistName;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button button1;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Timer timer1;
     }
 }
