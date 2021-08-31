@@ -70,18 +70,14 @@ namespace Project_PRG
             lblPlayerNameLabel.Text = player1.Name;           
             
 
-<<<<<<< HEAD
+
             Random r = new Random();
             int randomIndex = r.Next(artistList.Count);
             Artist RandomArtist = artistList[randomIndex];
             lblArtsistName.Text = RandomArtist.GetArtistName();
             checkedIndices.Add(randomIndex);
             currentArtist = RandomArtist;
-=======
-            //Random r = new Random(data.)
-           
-          
->>>>>>> master
+
 
         }
 
@@ -116,10 +112,15 @@ namespace Project_PRG
                 }
                 else if (turn == 1)
                 {
+
                     lblPlayerNameLabel.Text = player2.Name;
                     Time = 60;
                     turn++;
-                    currentPlayer = player2;                    
+                    currentPlayer = player2;
+                    MessageBox.Show("Player 2's turn");
+                    timer1.Stop();
+                    lblScore.Text = "Score: 0";
+                    
                 }
                 else
                 {
@@ -133,6 +134,11 @@ namespace Project_PRG
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            if (turn == 2)
+            {
+                timer1.Start();
+                turn++;
+            }
             Random r = new Random();
             int randomIndex = r.Next(artistList.Count);
             
@@ -177,7 +183,7 @@ namespace Project_PRG
                 if (lsbGenre.SelectedIndices.Contains((int)artistGen))
                 {                                     
                     ++currentPlayer.Score;
-                    lblScore.Text = currentPlayer.Score.ToString();
+                    lblScore.Text = "Score: "+currentPlayer.Score.ToString();
 
                 };
                
