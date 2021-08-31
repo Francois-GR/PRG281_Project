@@ -23,11 +23,11 @@ namespace Project_PRG
            
             InitializeComponent();
             this.player1 = player1;
-            lblPlayerNameLabel.Text = player1.Name;
+            lblPlayerNameLabel.Text = this.player1.Name;
             if (player2 != null)
             {
                 this.player2 = player2;
-                lblPlayerNameLabel.Text += $" and {player2.Name}";
+                lblPlayerNameLabel.Text += $" and {this.player2.Name}";
             }
         }
 
@@ -71,6 +71,7 @@ namespace Project_PRG
             btnSubmit.Visible = true;
             lblTime.Visible = true;
             btnStart.Visible = false ;
+            //StartGame();
         }
     }
 }

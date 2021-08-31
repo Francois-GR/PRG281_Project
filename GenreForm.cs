@@ -6,14 +6,19 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Project_PRG
 {
+
     public partial class GenreForm : Form
     {
+       
+
         Player player1 = new Player();
         Player player2 = new Player();
+        public int Time = 60;
         public GenreForm()
         {
             InitializeComponent();
@@ -29,6 +34,8 @@ namespace Project_PRG
                 lblPlayerNameLabel.Text += $" and {player2.Name}";
             }
 
+           
+
         }
 
         private void GenreForm_Load(object sender, EventArgs e)
@@ -40,17 +47,51 @@ namespace Project_PRG
 
         }
 
-        private void btnStart_Click(object sender, EventArgs e)
+        private  void btnStart_Click(object sender, EventArgs e)
         {
             ArtistGroupBox.Visible = true;
             grpGenres.Visible = true;
             btnSubmit.Visible = true;
             btnStart.Visible = false;
+            timer1.Start();
+                    
+          
+
         }
+
+       
+
+        public static string TimeLeft;
+
+        public static void StartGame(int time)
+        {
+           
+
+        }
+
+        
+     
 
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+            
         }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+            MusicTimer timer = new MusicTimer(60);
+            timer.Start(StartGame);
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (Time > 0)
+            {
+                TimeLabel.Text = Time--.ToString();
+            }
+
+        }
+
     }
 }
