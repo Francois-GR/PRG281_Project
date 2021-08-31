@@ -31,3 +31,18 @@ C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project\
 C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project\final\PRG281_Project\bin\Debug\Project_PRG.exe.config
 C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project\final\PRG281_Project\bin\Debug\Project_PRG.exe
 C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project\final\PRG281_Project\bin\Debug\Project_PRG.pdb
+E:\2021\Belgium\3. Programming 281\PRG281 Assignments\Prg281_Project\PRG281_Project\bin\Debug\Project_PRG.exe.config
+E:\2021\Belgium\3. Programming 281\PRG281 Assignments\Prg281_Project\PRG281_Project\bin\Debug\Project_PRG.exe
+E:\2021\Belgium\3. Programming 281\PRG281 Assignments\Prg281_Project\PRG281_Project\bin\Debug\Project_PRG.pdb
+E:\2021\Belgium\3. Programming 281\PRG281 Assignments\Prg281_Project\PRG281_Project\obj\Debug\Project_PRG.csprojAssemblyReference.cache
+E:\2021\Belgium\3. Programming 281\PRG281 Assignments\Prg281_Project\PRG281_Project\obj\Debug\Project_PRG.ArtistForm.resources
+E:\2021\Belgium\3. Programming 281\PRG281 Assignments\Prg281_Project\PRG281_Project\obj\Debug\Project_PRG.Login.resources
+E:\2021\Belgium\3. Programming 281\PRG281 Assignments\Prg281_Project\PRG281_Project\obj\Debug\Project_PRG.GameMode.resources
+E:\2021\Belgium\3. Programming 281\PRG281 Assignments\Prg281_Project\PRG281_Project\obj\Debug\Project_PRG.GenreForm.resources
+E:\2021\Belgium\3. Programming 281\PRG281 Assignments\Prg281_Project\PRG281_Project\obj\Debug\Project_PRG.Menu.resources
+E:\2021\Belgium\3. Programming 281\PRG281 Assignments\Prg281_Project\PRG281_Project\obj\Debug\Project_PRG.Properties.Resources.resources
+E:\2021\Belgium\3. Programming 281\PRG281 Assignments\Prg281_Project\PRG281_Project\obj\Debug\Project_PRG.Signup.resources
+E:\2021\Belgium\3. Programming 281\PRG281 Assignments\Prg281_Project\PRG281_Project\obj\Debug\Project_PRG.csproj.GenerateResource.cache
+E:\2021\Belgium\3. Programming 281\PRG281 Assignments\Prg281_Project\PRG281_Project\obj\Debug\Project_PRG.csproj.CoreCompileInputs.cache
+E:\2021\Belgium\3. Programming 281\PRG281 Assignments\Prg281_Project\PRG281_Project\obj\Debug\Project_PRG.exe
+E:\2021\Belgium\3. Programming 281\PRG281 Assignments\Prg281_Project\PRG281_Project\obj\Debug\Project_PRG.pdb
