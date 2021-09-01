@@ -117,7 +117,15 @@ namespace Project_PRG
         private void EndGame()
         {
             timer1.Stop();
-            MessageBox.Show("Game is finished!");
+            Score gameSummary;
+
+            if (player2 == null)
+                gameSummary = new Score(player1);
+            else
+                gameSummary = new Score(player1, player2);
+
+            gameSummary.Show();
+            this.Dispose();
         }
 
         private void UpdateSongList()

@@ -61,3 +61,4 @@ C:\Users\joube\source\repos\PRG281_Project_Collab\PRG281_Project\bin\Debug\Proje
 C:\Users\joube\source\repos\PRG281_Project_Collab\PRG281_Project\bin\Debug\Project_PRG.exe
 C:\Users\joube\source\repos\PRG281_Project_Collab\PRG281_Project\bin\Debug\Project_PRG.pdb
 C:\Users\francois\Documents\subjects\PRG\Year_2\281\Assignments\Project\Project\final\PRG281_Project\obj\Debug\Project_PRG.Score.resources
+C:\Users\joube\source\repos\PRG281_Project_Collab\PRG281_Project\obj\Debug\Project_PRG.Score.resources
