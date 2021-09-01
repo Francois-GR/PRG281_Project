@@ -50,11 +50,11 @@
             this.grpArtist.Controls.Add(this.ArtistListBox);
             this.grpArtist.Font = new System.Drawing.Font("Segoe UI", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpArtist.ForeColor = System.Drawing.Color.White;
-            this.grpArtist.Location = new System.Drawing.Point(545, 55);
-            this.grpArtist.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpArtist.Location = new System.Drawing.Point(409, 45);
+            this.grpArtist.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpArtist.Name = "grpArtist";
-            this.grpArtist.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grpArtist.Size = new System.Drawing.Size(243, 143);
+            this.grpArtist.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpArtist.Size = new System.Drawing.Size(182, 168);
             this.grpArtist.TabIndex = 17;
             this.grpArtist.TabStop = false;
             this.grpArtist.Text = "Artists";
@@ -72,10 +72,10 @@
             "21 Pilots",
             "Imagine Dragon",
             "Avicii"});
-            this.ArtistListBox.Location = new System.Drawing.Point(3, 26);
-            this.ArtistListBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ArtistListBox.Location = new System.Drawing.Point(2, 22);
+            this.ArtistListBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ArtistListBox.Name = "ArtistListBox";
-            this.ArtistListBox.Size = new System.Drawing.Size(237, 115);
+            this.ArtistListBox.Size = new System.Drawing.Size(178, 144);
             this.ArtistListBox.TabIndex = 7;
             this.ArtistListBox.SelectedIndexChanged += new System.EventHandler(this.ArtistListBox_SelectedIndexChanged);
             // 
@@ -85,9 +85,10 @@
             this.ScoreLabel.AutoSize = true;
             this.ScoreLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ScoreLabel.ForeColor = System.Drawing.Color.Lime;
-            this.ScoreLabel.Location = new System.Drawing.Point(619, 391);
+            this.ScoreLabel.Location = new System.Drawing.Point(464, 318);
+            this.ScoreLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ScoreLabel.Name = "ScoreLabel";
-            this.ScoreLabel.Size = new System.Drawing.Size(162, 54);
+            this.ScoreLabel.Size = new System.Drawing.Size(132, 45);
             this.ScoreLabel.TabIndex = 16;
             this.ScoreLabel.Text = "Score: 0";
             // 
@@ -97,10 +98,10 @@
             this.btnSubmit.BackColor = System.Drawing.Color.Lime;
             this.btnSubmit.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit.ForeColor = System.Drawing.Color.Black;
-            this.btnSubmit.Location = new System.Drawing.Point(545, 224);
-            this.btnSubmit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSubmit.Location = new System.Drawing.Point(411, 227);
+            this.btnSubmit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(240, 84);
+            this.btnSubmit.Size = new System.Drawing.Size(180, 68);
             this.btnSubmit.TabIndex = 15;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
@@ -111,9 +112,10 @@
             this.lblTime.AutoSize = true;
             this.lblTime.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTime.ForeColor = System.Drawing.Color.Red;
-            this.lblTime.Location = new System.Drawing.Point(531, 6);
+            this.lblTime.Location = new System.Drawing.Point(398, 5);
+            this.lblTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(226, 32);
+            this.lblTime.Size = new System.Drawing.Size(176, 25);
             this.lblTime.TabIndex = 14;
             this.lblTime.Text = "Time Remaining: 60";
             this.lblTime.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -123,11 +125,11 @@
             this.grpSongName.Controls.Add(this.SongListRichTextbox);
             this.grpSongName.Font = new System.Drawing.Font("Segoe UI", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpSongName.ForeColor = System.Drawing.Color.White;
-            this.grpSongName.Location = new System.Drawing.Point(19, 81);
-            this.grpSongName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpSongName.Location = new System.Drawing.Point(14, 66);
+            this.grpSongName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpSongName.Name = "grpSongName";
-            this.grpSongName.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.grpSongName.Size = new System.Drawing.Size(263, 141);
+            this.grpSongName.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpSongName.Size = new System.Drawing.Size(197, 115);
             this.grpSongName.TabIndex = 13;
             this.grpSongName.TabStop = false;
             this.grpSongName.Text = "Song Names";
@@ -136,10 +138,11 @@
             // 
             this.SongListRichTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.SongListRichTextbox.Enabled = false;
-            this.SongListRichTextbox.Location = new System.Drawing.Point(7, 29);
+            this.SongListRichTextbox.Location = new System.Drawing.Point(5, 24);
+            this.SongListRichTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SongListRichTextbox.Name = "SongListRichTextbox";
             this.SongListRichTextbox.ReadOnly = true;
-            this.SongListRichTextbox.Size = new System.Drawing.Size(250, 107);
+            this.SongListRichTextbox.Size = new System.Drawing.Size(188, 88);
             this.SongListRichTextbox.TabIndex = 0;
             this.SongListRichTextbox.Text = "";
             // 
@@ -148,9 +151,10 @@
             this.InstructionalTextLabel.AutoSize = true;
             this.InstructionalTextLabel.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InstructionalTextLabel.ForeColor = System.Drawing.Color.White;
-            this.InstructionalTextLabel.Location = new System.Drawing.Point(13, 27);
+            this.InstructionalTextLabel.Location = new System.Drawing.Point(10, 22);
+            this.InstructionalTextLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.InstructionalTextLabel.Name = "InstructionalTextLabel";
-            this.InstructionalTextLabel.Size = new System.Drawing.Size(324, 23);
+            this.InstructionalTextLabel.Size = new System.Drawing.Size(269, 19);
             this.InstructionalTextLabel.TabIndex = 12;
             this.InstructionalTextLabel.Text = "Select all the correct songs of the artist";
             // 
@@ -159,9 +163,10 @@
             this.lblPlayerNameLabel.AutoSize = true;
             this.lblPlayerNameLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayerNameLabel.ForeColor = System.Drawing.Color.White;
-            this.lblPlayerNameLabel.Location = new System.Drawing.Point(13, 4);
+            this.lblPlayerNameLabel.Location = new System.Drawing.Point(10, 3);
+            this.lblPlayerNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPlayerNameLabel.Name = "lblPlayerNameLabel";
-            this.lblPlayerNameLabel.Size = new System.Drawing.Size(108, 23);
+            this.lblPlayerNameLabel.Size = new System.Drawing.Size(88, 19);
             this.lblPlayerNameLabel.TabIndex = 11;
             this.lblPlayerNameLabel.Text = "Player Name";
             // 
@@ -171,10 +176,10 @@
             this.btnExit.BackColor = System.Drawing.Color.Lime;
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.Black;
-            this.btnExit.Location = new System.Drawing.Point(19, 367);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExit.Location = new System.Drawing.Point(14, 298);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(160, 70);
+            this.btnExit.Size = new System.Drawing.Size(120, 57);
             this.btnExit.TabIndex = 18;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -186,10 +191,10 @@
             this.btnStart.BackColor = System.Drawing.Color.Lime;
             this.btnStart.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStart.ForeColor = System.Drawing.Color.Black;
-            this.btnStart.Location = new System.Drawing.Point(19, 279);
-            this.btnStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnStart.Location = new System.Drawing.Point(14, 227);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(240, 84);
+            this.btnStart.Size = new System.Drawing.Size(180, 68);
             this.btnStart.TabIndex = 21;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = false;
@@ -202,10 +207,10 @@
             // 
             // ArtistForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.grpArtist);
@@ -215,7 +220,7 @@
             this.Controls.Add(this.grpSongName);
             this.Controls.Add(this.InstructionalTextLabel);
             this.Controls.Add(this.lblPlayerNameLabel);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ArtistForm";
             this.Text = "Match Artists to their music";
             this.Load += new System.EventHandler(this.ArtistForm_Load);

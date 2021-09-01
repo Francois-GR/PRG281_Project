@@ -34,7 +34,7 @@ namespace Project_PRG
             this.lblPlayer2Name = new System.Windows.Forms.Label();
             this.lblPlayer1Name = new System.Windows.Forms.Label();
             this.lblPlayer1Score = new System.Windows.Forms.Label();
-            this.lblPlayer2Score = new System.Windows.Forms.Label();
+            this.lblPlayer2Score1 = new System.Windows.Forms.Label();
             this.btnMenu = new System.Windows.Forms.Button();
             this.btnPlayeAgain = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
@@ -89,22 +89,22 @@ namespace Project_PRG
             this.lblPlayer1Score.AutoSize = true;
             this.lblPlayer1Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayer1Score.ForeColor = System.Drawing.Color.Lime;
-            this.lblPlayer1Score.Location = new System.Drawing.Point(31, 70);
+            this.lblPlayer1Score.Location = new System.Drawing.Point(172, 70);
             this.lblPlayer1Score.Name = "lblPlayer1Score";
             this.lblPlayer1Score.Size = new System.Drawing.Size(64, 20);
             this.lblPlayer1Score.TabIndex = 4;
             this.lblPlayer1Score.Text = "Score:0";
             // 
-            // lblPlayer2Score
+            // lblPlayer2Score1
             // 
-            this.lblPlayer2Score.AutoSize = true;
-            this.lblPlayer2Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayer2Score.ForeColor = System.Drawing.Color.Lime;
-            this.lblPlayer2Score.Location = new System.Drawing.Point(172, 70);
-            this.lblPlayer2Score.Name = "lblPlayer2Score";
-            this.lblPlayer2Score.Size = new System.Drawing.Size(64, 20);
-            this.lblPlayer2Score.TabIndex = 5;
-            this.lblPlayer2Score.Text = "Score:0";
+            this.lblPlayer2Score1.AutoSize = true;
+            this.lblPlayer2Score1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayer2Score1.ForeColor = System.Drawing.Color.Lime;
+            this.lblPlayer2Score1.Location = new System.Drawing.Point(31, 70);
+            this.lblPlayer2Score1.Name = "lblPlayer2Score1";
+            this.lblPlayer2Score1.Size = new System.Drawing.Size(64, 20);
+            this.lblPlayer2Score1.TabIndex = 5;
+            this.lblPlayer2Score1.Text = "Score:0";
             // 
             // btnMenu
             // 
@@ -151,7 +151,7 @@ namespace Project_PRG
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnPlayeAgain);
             this.Controls.Add(this.btnMenu);
-            this.Controls.Add(this.lblPlayer2Score);
+            this.Controls.Add(this.lblPlayer2Score1);
             this.Controls.Add(this.lblPlayer1Score);
             this.Controls.Add(this.lblPlayer1Name);
             this.Controls.Add(this.lblPlayer2Name);
@@ -171,7 +171,7 @@ namespace Project_PRG
         private System.Windows.Forms.Label lblPlayer2Name;
         private System.Windows.Forms.Label lblPlayer1Name;
         private System.Windows.Forms.Label lblPlayer1Score;
-        private System.Windows.Forms.Label lblPlayer2Score;
+        private System.Windows.Forms.Label lblPlayer2Score1;
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Button btnPlayeAgain;
         private System.Windows.Forms.Button btnExit;

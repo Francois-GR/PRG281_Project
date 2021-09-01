@@ -102,7 +102,7 @@ namespace Project_PRG
                     {
                         ActivePlayer = player2;
                         lblPlayerNameLabel.Text = player2.Name;
-                        ScoreLabel.Text = player2.Score.ToString();
+                        ScoreLabel.Text = "Score: "+player2.Score.ToString();
                         Time = MaxTime;
                         lblPlayerNameLabel.Text = ActivePlayer.GetPlayerName();
                     }

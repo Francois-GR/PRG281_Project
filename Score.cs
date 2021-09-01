@@ -33,7 +33,7 @@ namespace Project_PRG
                 lblPlayer1Score.Text = this.player1.Score.ToString();
 
                 lblPlayer2Name.Text = this.player2.Name;
-                lblPlayer2Score.Text = this.player2.Score.ToString();
+                lblPlayer2Score1.Text = this.player2.Score.ToString();
 
                 players++;
 
@@ -48,7 +48,7 @@ namespace Project_PRG
 
                 lblPlayer2.Visible = false;
                 lblPlayer2Name.Visible = false;
-                lblPlayer2Score.Visible = false;
+                lblPlayer2Score1.Visible = false;
             }
         }
 
@@ -72,3 +72,4 @@ namespace Project_PRG
         }
     }
 }
+ 
