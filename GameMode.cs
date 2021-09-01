@@ -13,8 +13,8 @@ namespace Project_PRG
 {
     public partial class GameMode : Form
     {
-        bool multiplayer = false;
-        Player MainPlayer;
+        bool multiplayer = false;// keep track of state
+        Player MainPlayer; // keep track of original player that signed in
         public GameMode()
         {
             InitializeComponent();
@@ -46,9 +46,11 @@ namespace Project_PRG
             }
             catch(playerModeException e)
             {
+                //unown error occured, send user back to menu form to try again
                 MessageBox.Show(e.Message);
                 Menu menuForm = new Menu(player);
                 menuForm.Show();
+                this.Dispose();
             }
 
 
@@ -66,20 +68,21 @@ namespace Project_PRG
         {
             if (multiplayer)
             {
-                string SecondPlayername = txtSecondPlayer.Text;
+                //initiate mulitplayer sequence
+                string SecondPlayername = txtSecondPlayer.Text;// second user will be playing as guest
                 if (SecondPlayername == string.Empty)
                 {
-                    SecondPlayername = "Guest";                    
+                    SecondPlayername = "Guest";    // avoid uneccasarry error                
                     
                 }
-                Player SecondPlayer = new Player(SecondPlayername, "");
-                ArtistForm artistForm = new ArtistForm(MainPlayer, SecondPlayer);
+                Player SecondPlayer = new Player(SecondPlayername, "");// no need for a password, player is temporary and won't be added to the database
+                ArtistForm artistForm = new ArtistForm(MainPlayer, SecondPlayer);// send both players information to the game
                 artistForm.Show();
                 this.Hide();
             }
             else
             {
-                ArtistForm genreFrom = new ArtistForm(MainPlayer);
+                ArtistForm genreFrom = new ArtistForm(MainPlayer);// send only the main player, because second player does not exist
                 genreFrom.Show();
                 this.Hide();
             }
@@ -94,6 +97,7 @@ namespace Project_PRG
         {
             if (multiplayer)
             {
+                //same sequence as above
                 string SecondPlayername = txtSecondPlayer.Text;
                 Player SecondPlayer = new Player(SecondPlayername, "");
                 GenreForm genreForm = new GenreForm(MainPlayer, SecondPlayer);
@@ -112,8 +116,10 @@ namespace Project_PRG
         
         private void GameMode_Load(object sender, EventArgs e)
         {
+            // if it is multiplayer a second user needs to be created, all we need is a name.
             if (!multiplayer)
             {
+                // if multiplayer the text box needs to be visible other wise it should not be shown
                 lblPromtName.Visible = false;
                 txtSecondPlayer.Visible = false;
             }

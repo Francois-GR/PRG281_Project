@@ -19,22 +19,19 @@ namespace Project_PRG
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            //empty
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
-            
+            //empty
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+     
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {       
-            Validation validation = new Validation();
+            Validation validation = new Validation();// create class for validation, this will handle the exceptions and validation
             string userName = txtUserName.Text;
             string password = txtPassword.Text;
 
@@ -54,14 +51,11 @@ namespace Project_PRG
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void btnMoveToSignUp_Click(object sender, EventArgs e)
         {
-            Signup signupFrom = new Signup();
+            Signup signupFrom = new Signup();// move to signup form
             signupFrom.Show();
             this.Hide();
         }

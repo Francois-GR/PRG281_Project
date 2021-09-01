@@ -14,19 +14,19 @@ namespace Project_PRG
 
     public partial class GenreForm : Form
     {
-        int turn = 1;
+        int turn = 1;// keep track of who's turn it is
 
-        DataHandler data = new DataHandler();
+        DataHandler data = new DataHandler();// get database ready
 
-        List<Artist> artistList = new List<Artist>();
+        List<Artist> artistList = new List<Artist>(); //get temp list of artist names
 
-        List<int> checkedIndices = new List<int>();
+        List<int> checkedIndices = new List<int>(); //this is to keep track of the artist already shown
 
         Player player1;
-        Player player2 = null;
-        Player currentPlayer;
+        Player player2 = null;// default
+        Player currentPlayer;// keep track of who needs to play
 
-        Artist currentArtist;
+        Artist currentArtist;// keep track of current artist reltive to next random artist
         public int Time = 60;
         public GenreForm()
         {
@@ -36,13 +36,13 @@ namespace Project_PRG
         {
             InitializeComponent();
             this.player1 = player1;
-            lblPlayerNameLabel.Text = player1.Name;
+            lblPlayerNameLabel.Text = player1.Name; 
             if(player2 != null)
             {
                 this.player2 = player2;
                 lblPlayerNameLabel.Text += $" and {this.player2.Name}";
             }
-            artistList = data.GetArtist();
+            artistList = data.GetArtist();// initiate temp list
             currentPlayer = this.player1;
  
 
@@ -51,6 +51,7 @@ namespace Project_PRG
 
         private void GenreForm_Load(object sender, EventArgs e)
         {
+            // hide game elements
             ArtistGroupBox.Visible = false;
             grpGenres.Visible = false;
             btnSubmit.Visible = false;
@@ -60,28 +61,21 @@ namespace Project_PRG
 
         private  void btnStart_Click(object sender, EventArgs e)
         {
+            //show game elements
             ArtistGroupBox.Visible = true;
             grpGenres.Visible = true;
             btnSubmit.Visible = true;
             btnStart.Visible = false;
             timer1.Start();
-
-
-            lblPlayerNameLabel.Text = "First PLayer: "+player1.Name;           
-            
-
-
+            lblPlayerNameLabel.Text = "First Player: "+player1.Name;  // show whose turn it is         
+          // determine new random artist and keep track of artist
             Random r = new Random();
-            int randomIndex = r.Next(artistList.Count);
+            int randomIndex = r.Next(artistList.Count);// get random value to get random artist
             Artist RandomArtist = artistList[randomIndex];
             lblArtsistName.Text = RandomArtist.GetArtistName();
             checkedIndices.Add(randomIndex);
             currentArtist = RandomArtist;
-<<<<<<< HEAD
-=======
 
-
->>>>>>> master
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -94,7 +88,7 @@ namespace Project_PRG
         {
             if (Time >= 0)
             {
-                TimeLabel.Text ="Time remaining: " + Time--.ToString();
+                TimeLabel.Text ="Time remaining: " + Time--.ToString();//update label
             }
             else
             {
@@ -102,13 +96,13 @@ namespace Project_PRG
                 {
                     //call endgame fomr
                 }
-                else if (turn == 1)
+                else if (turn == 1)// player one's turn ended
                 {
 
                     lblPlayerNameLabel.Text = "Player two: "+player2.Name;
-                    Time = 60;
-                    turn++;
-                    currentPlayer = player2;
+                    Time = 60; //reset time
+                    turn++;// update turn
+                    currentPlayer = player2;// next player
                     
                     
                     lblScore.Text = "Score: 0";
@@ -128,16 +122,17 @@ namespace Project_PRG
         {
 
 
-            
+            //get new random artist without it beng a a previously had one
                        
             Random r = new Random();
             int randomIndex = r.Next(artistList.Count);
             
             int count = 0;
-            while (checkedIndices.Contains(randomIndex))
+
+            while (checkedIndices.Contains(randomIndex) || currentArtist.GetArtistName() == lblArtsistName.Text)
             {
                 randomIndex = r.Next(artistList.Count);
-                count++;
+                count++;// stop infinite loop scenario
                 if(count> artistList.Count)
                 {
                     break;
@@ -150,32 +145,32 @@ namespace Project_PRG
             checkedIndices.Add(randomIndex);
             lblArtsistName.Text = RandomArtist.GetArtistName();
 
-            CheckAnswers(currentArtist);
+            CheckAnswers(currentArtist);// update score according to correct answeres
 
             clearGenreBoxes();
 
-            currentArtist = RandomArtist;
+            currentArtist = RandomArtist; // update 
 
 
         }
 
         public void CheckAnswers(Artist artist)
         {
-            List<Music> artistMusic = artist.GetMusic();
-            List<Genre> artistGenres = new List<Genre>();
+            List<Music> artistMusic = artist.GetMusic();//extract artist music
+            List<Genre> artistGenres = new List<Genre>();// store genres 
            
        
 
             foreach (Music music  in artistMusic)
             {
-                artistGenres.Add(music.GetGenre());
+                artistGenres.Add(music.GetGenre()); // extract artist genre from artist music
             }
 
             foreach (Genre artistGen in artistGenres)
             {
-                if (lsbGenre.SelectedIndices.Contains((int)artistGen))
+                if (lsbGenre.SelectedIndices.Contains((int)artistGen))// cast enum type to int and test if the user selected the same indecies from the list box
                 {                                     
-                    ++currentPlayer.Score;
+                    ++currentPlayer.Score;// increment score before updating 
                     lblScore.Text = "Score: "+currentPlayer.Score.ToString();
 
                 };

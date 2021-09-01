@@ -24,7 +24,7 @@ namespace Project_PRG
 
         private void btnMoveToLogIn_Click(object sender, EventArgs e)
         {
-            Login loginForm = new Login();
+            Login loginForm = new Login();// navigate to login
             loginForm.Show();
             this.Hide();
 
@@ -33,6 +33,7 @@ namespace Project_PRG
 
         private void btnSignup_Click(object sender, EventArgs e)
         {
+            // todo: validate user data, check is user exists, add user to database
             bool validated = false;
             Validation validation = new Validation();
             DataHandler data = new DataHandler();
@@ -51,7 +52,7 @@ namespace Project_PRG
                         }
                         else
                         {
-                            txtUserName.Clear();
+                            txtUserName.Clear();// promt user to enter new username
                             validated = false;
                             throw new validationException("User already exists");
                         }
@@ -79,8 +80,8 @@ namespace Project_PRG
 
             if (validated)
             {
-                Player player = new Player(username, password);
-                data.AddPlayer(player);
+                Player player = new Player(username, password);// create new player to add to simulated database
+                data.AddPlayer(player);// add player to database
                 Menu menuForm = new Menu(player);// send current player data into the menu for further use
                 menuForm.Show();
                 this.Hide();
