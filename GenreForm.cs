@@ -94,8 +94,9 @@ namespace Project_PRG
             {
                 if (player2 == null)
                 {
-                    //call endgame fomr
-                }
+                   Score gameSummary = new Score(player1);
+                    gameSummary.Show();
+                    this.Dispose();                }
                 else if (turn == 1)// player one's turn ended
                 {
 
@@ -112,7 +113,9 @@ namespace Project_PRG
                 }
                 else
                 {
-                    //call end game form
+                    Score gameSummary = new Score(player1, player2);
+                    gameSummary.Show();
+                    this.Dispose();
                 }
             }
 

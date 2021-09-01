@@ -29,118 +29,118 @@ namespace Project_PRG
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.lblPlayer1 = new System.Windows.Forms.Label();
+            this.lblPlayer2 = new System.Windows.Forms.Label();
+            this.lblPlayer2Name = new System.Windows.Forms.Label();
+            this.lblPlayer1Name = new System.Windows.Forms.Label();
+            this.lblPlayer1Score = new System.Windows.Forms.Label();
+            this.lblPlayer2Score = new System.Windows.Forms.Label();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.btnPlayeAgain = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lblPlayer1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.label1.Location = new System.Drawing.Point(172, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Player 1";
+            this.lblPlayer1.AutoSize = true;
+            this.lblPlayer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayer1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.lblPlayer1.Location = new System.Drawing.Point(172, 26);
+            this.lblPlayer1.Name = "lblPlayer1";
+            this.lblPlayer1.Size = new System.Drawing.Size(77, 24);
+            this.lblPlayer1.TabIndex = 0;
+            this.lblPlayer1.Text = "Player 1";
             // 
-            // label2
+            // lblPlayer2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.label2.Location = new System.Drawing.Point(31, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 24);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Player 2";
+            this.lblPlayer2.AutoSize = true;
+            this.lblPlayer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayer2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.lblPlayer2.Location = new System.Drawing.Point(31, 26);
+            this.lblPlayer2.Name = "lblPlayer2";
+            this.lblPlayer2.Size = new System.Drawing.Size(77, 24);
+            this.lblPlayer2.TabIndex = 1;
+            this.lblPlayer2.Text = "Player 2";
             // 
-            // label3
+            // lblPlayer2Name
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.label3.Location = new System.Drawing.Point(31, 50);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Name";
+            this.lblPlayer2Name.AutoSize = true;
+            this.lblPlayer2Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayer2Name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.lblPlayer2Name.Location = new System.Drawing.Point(31, 50);
+            this.lblPlayer2Name.Name = "lblPlayer2Name";
+            this.lblPlayer2Name.Size = new System.Drawing.Size(51, 20);
+            this.lblPlayer2Name.TabIndex = 2;
+            this.lblPlayer2Name.Text = "Name";
             // 
-            // label4
+            // lblPlayer1Name
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.label4.Location = new System.Drawing.Point(172, 50);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 20);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Name";
+            this.lblPlayer1Name.AutoSize = true;
+            this.lblPlayer1Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayer1Name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.lblPlayer1Name.Location = new System.Drawing.Point(172, 50);
+            this.lblPlayer1Name.Name = "lblPlayer1Name";
+            this.lblPlayer1Name.Size = new System.Drawing.Size(51, 20);
+            this.lblPlayer1Name.TabIndex = 3;
+            this.lblPlayer1Name.Text = "Name";
             // 
-            // label5
+            // lblPlayer1Score
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Lime;
-            this.label5.Location = new System.Drawing.Point(31, 70);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 20);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Score:0";
+            this.lblPlayer1Score.AutoSize = true;
+            this.lblPlayer1Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayer1Score.ForeColor = System.Drawing.Color.Lime;
+            this.lblPlayer1Score.Location = new System.Drawing.Point(31, 70);
+            this.lblPlayer1Score.Name = "lblPlayer1Score";
+            this.lblPlayer1Score.Size = new System.Drawing.Size(64, 20);
+            this.lblPlayer1Score.TabIndex = 4;
+            this.lblPlayer1Score.Text = "Score:0";
             // 
-            // label6
+            // lblPlayer2Score
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Lime;
-            this.label6.Location = new System.Drawing.Point(172, 70);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 20);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Score:0";
+            this.lblPlayer2Score.AutoSize = true;
+            this.lblPlayer2Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayer2Score.ForeColor = System.Drawing.Color.Lime;
+            this.lblPlayer2Score.Location = new System.Drawing.Point(172, 70);
+            this.lblPlayer2Score.Name = "lblPlayer2Score";
+            this.lblPlayer2Score.Size = new System.Drawing.Size(64, 20);
+            this.lblPlayer2Score.TabIndex = 5;
+            this.lblPlayer2Score.Text = "Score:0";
             // 
-            // button1
+            // btnMenu
             // 
-            this.button1.BackColor = System.Drawing.Color.Lime;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(35, 116);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 50);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Menu";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnMenu.BackColor = System.Drawing.Color.Lime;
+            this.btnMenu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnMenu.Location = new System.Drawing.Point(35, 116);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(98, 50);
+            this.btnMenu.TabIndex = 6;
+            this.btnMenu.Text = "Menu";
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnPlayeAgain
             // 
-            this.button2.BackColor = System.Drawing.Color.Lime;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(176, 116);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(98, 50);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Play Again";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnPlayeAgain.BackColor = System.Drawing.Color.Lime;
+            this.btnPlayeAgain.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnPlayeAgain.Location = new System.Drawing.Point(176, 116);
+            this.btnPlayeAgain.Name = "btnPlayeAgain";
+            this.btnPlayeAgain.Size = new System.Drawing.Size(98, 50);
+            this.btnPlayeAgain.TabIndex = 7;
+            this.btnPlayeAgain.Text = "Play Again";
+            this.btnPlayeAgain.UseVisualStyleBackColor = false;
+            this.btnPlayeAgain.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btnExit
             // 
-            this.button3.BackColor = System.Drawing.Color.Lime;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.button3.Location = new System.Drawing.Point(103, 186);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(98, 50);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Exit";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnExit.BackColor = System.Drawing.Color.Lime;
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnExit.Location = new System.Drawing.Point(103, 186);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(98, 50);
+            this.btnExit.TabIndex = 8;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.button3_Click);
             // 
             // Score
             // 
@@ -148,15 +148,15 @@ namespace Project_PRG
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.ClientSize = new System.Drawing.Size(350, 271);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnPlayeAgain);
+            this.Controls.Add(this.btnMenu);
+            this.Controls.Add(this.lblPlayer2Score);
+            this.Controls.Add(this.lblPlayer1Score);
+            this.Controls.Add(this.lblPlayer1Name);
+            this.Controls.Add(this.lblPlayer2Name);
+            this.Controls.Add(this.lblPlayer2);
+            this.Controls.Add(this.lblPlayer1);
             this.Name = "Score";
             this.Text = "Score";
             this.ResumeLayout(false);
@@ -166,14 +166,14 @@ namespace Project_PRG
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label lblPlayer1;
+        private System.Windows.Forms.Label lblPlayer2;
+        private System.Windows.Forms.Label lblPlayer2Name;
+        private System.Windows.Forms.Label lblPlayer1Name;
+        private System.Windows.Forms.Label lblPlayer1Score;
+        private System.Windows.Forms.Label lblPlayer2Score;
+        private System.Windows.Forms.Button btnMenu;
+        private System.Windows.Forms.Button btnPlayeAgain;
+        private System.Windows.Forms.Button btnExit;
     }
 }
